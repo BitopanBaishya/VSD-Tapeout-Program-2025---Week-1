@@ -6,7 +6,7 @@ The focus of today is
 
 ## 📜 Table of Contents
 [1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-test-bench) <br>
-[2. Lab: Simulation of a 2-to-1 MUX.](2-lab-simulation-of-a-2-to-1-mux)
+[2. Lab: Simulation of a 2-to-1 MUX.](#2-lab-simulation-of-a-2-to-1-multiplexer-mux)
 
 ---
 
