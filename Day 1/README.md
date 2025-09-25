@@ -5,7 +5,7 @@ The focus of today is
 ---
 
 ## 📜 Table of Contents
-[1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-testbench)
+[1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-test-bench)
 
 ---
 
