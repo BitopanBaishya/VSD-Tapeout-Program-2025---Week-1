@@ -1,6 +1,6 @@
 # Week 1: Introduction to RTL Design Flow.
  
-The focus of this week is on **understandimng the complete RTL design flow.**
+The focus of this week is on **understanding the complete RTL design flow.**
 
 ---
 
