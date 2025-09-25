@@ -5,7 +5,7 @@ The focus of today is
 ---
 
 ## 📜 Table of Contents
-1. Introduction to RTL design, Design, Simulator and Test-Bench.
+[1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-testBench)
 
 ---
 
@@ -85,7 +85,9 @@ The focus of today is
   
      * Compiling Verilog designs and testbenches.
      * Running simulations.
-     * Generating waveform files for debugging.
+     * Generating output files in `.vcd` format.
+<br>
+     <img src="Images/Iverilog.png" alt="Alt Text" width="600"/>
 
 **4. <ins>Testbench</ins>**
    - **What is a Testbench?**
@@ -96,6 +98,8 @@ The focus of today is
      * Observes and checks outputs.
 
      Think of it as a virtual laboratory where you test your hardware before building it.
+<br>
+     <img src="Images/Testbench.png" alt="Alt Text" width="600"/>
 
    - **Structure of a Testbench.**
 
