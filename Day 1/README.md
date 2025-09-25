@@ -111,3 +111,4 @@ The focus of today is
        * Wire declarations for outputs.
        * Instantiation of the Design Under Test (DUT).
        * Stimulus (initial blocks, clocks).
+  [1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-testbench)
