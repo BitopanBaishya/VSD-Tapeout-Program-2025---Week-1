@@ -15,6 +15,8 @@ The focus of this week is on **understanding the complete RTL design flow.**
 
 ## 📋 Prerequisites
 - Basic understanding of Verilog codes.
+- Basic understanding of Linux commands.
+- Successful installation of the tools shown in [Week 0.](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-0.git)
 
 ---
 
