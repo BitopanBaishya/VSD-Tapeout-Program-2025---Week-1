@@ -1,6 +1,6 @@
 # Day 1: Introduction to Verilog RTL Design & Synthesis.
  
-The focus of today is 
+The focus of today is to get an introduction and understand the concepts of RTL Design, Simulation, Test-Bench, Synthesis and Netlist. Further, we will also perform two labs, simulating a 2-to-1 MUX using Iverilog and GTKWave in first lab, and then synthesizing the simulated MUX using Yosys in the second lab.
 
 ---
 
