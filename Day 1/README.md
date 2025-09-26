@@ -379,19 +379,48 @@ endmodule
      ```
      abc -liberty [address to your sky130 library file]/sky130_fd_sc_hd__tt_025C_1v80.lib
      ```
+     <br>
+	 The synthesis report that will be generated will be as follows:
+     <img src="Images/2to1MUX_SynthesisReport.png" alt="Alt Text" width="1000"/>
    * Step 6: Visualize the gate-level netlist <br>
      ```
      show
      ```
-     <br>
-	 The synthesis report that will be generated will be as follows:
-     <img src="Images/2to1MUX_SynthesisReport.png" alt="Alt Text" width="1000"/>
+   * Step 7: Write the Verilog netlist file <br>
+     ```
+     write_verilog -noattr good_mux_netlist.v
+     ```	
 
 ### 5. <ins>Expected Output</ins>
-<br>
-     The visualization of the MUX will be as follows:
-     <img src="Images/2to1MUX_SynthesisVisualization.png" alt="Alt Text" width="1000"/>
-
+   * The visualization of the MUX will be as follows:
+     <img src="Images/2to1MUX_SynthesisVisualization.png" alt="Alt Text" width="1000"/><br>
+   * The generated netlist file in Verilog (good_mux_netlist.v) is as follows:
+   ```
+   module good_mux(i0, i1, sel, y);
+  input i0;
+  wire i0;
+  input i1;
+  wire i1;
+  input sel;
+  wire sel;
+  output y;
+  wire y;
+  wire _0_;
+  wire _1_;
+  wire _2_;
+  wire _3_;
+  sky130_fd_sc_hd__mux2_1 _4_ (
+    .A0(_0_),
+    .A1(_1_),
+    .S(_2_),
+    .X(_3_)
+  );
+  assign _0_ = i0;
+  assign _1_ = i1;
+  assign _2_ = sel;
+  assign y = _3_;
+endmodule
+   ```
 ---
 
 ## ⚠️ Challenges
