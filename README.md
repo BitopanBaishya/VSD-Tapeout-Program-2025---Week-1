@@ -22,7 +22,7 @@ The focus of this week is on **understanding the complete RTL design flow.**
 
 ## 📈 Proceedings
 - [Day 1](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/tree/04219a4b69da48cdf6117666d33f4c86175f1ea8/Day%201)
-- [Day 2](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%202/README.md#4-some-special-case-optimizations-in-digital-circuits)
+- [Day 2](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%202/README.md)
 - [Day 3]()
 - [Day 4]()
 - [Day 5]()
