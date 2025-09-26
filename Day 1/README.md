@@ -8,7 +8,7 @@ The focus of today is
 [1. Introduction to RTL design, Design, Simulator and Test-Bench.](#1-introduction-to-rtl-design-design-simulator-and-test-bench) <br>
 [2. Lab: Simulation of a 2-to-1 MUX.](#2-lab-simulation-of-a-2-to-1-multiplexer-mux) <br>
 [3. Introduction to Synthesis, Netlist, Yosys and Frontend Libraries.](#3-introduction-to-synthesis-netlist-yosys-and-frontend-libraries) <br>
-[4. Lab: Synthesis of a 2-to-1 Multiplexer (MUX) using Yosys.](#4-lab-synthesis-of-a-2-to-1-multiplexer-mux-using-yosys)
+[4. Lab: Synthesis of a 2-to-1 Multiplexer (MUX) using Yosys.](#4-lab-synthesis-of-a-2-to-1-multiplexer-mux-using-yosys)<br>
 [5. Challenges](#%EF%B8%8F-challenges)
 
 ---
