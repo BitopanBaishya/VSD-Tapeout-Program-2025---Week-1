@@ -21,11 +21,11 @@ The focus of this week is on **understanding the complete RTL design flow.**
 ---
 
 ## 📈 Proceedings
-- [Day 1](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%201/README.md)
-- [Day 2](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%202/README.md)
-- [Day 3](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%203/README.md)
-- [Day 4](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%204/README.md)
-- [Day 5](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%205/README.md)
+- Proceed to [Day 1](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%201/README.md)
+- Proceed to [Day 2](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%202/README.md)
+- Proceed to [Day 3](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%203/README.md)
+- Proceed to [Day 4](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%204/README.md)
+- Proceed to [Day 5](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/39ab28880dd3ad3f48bbed38bf4fd0e14b621c49/Day%205/README.md)
 
 ---
 
