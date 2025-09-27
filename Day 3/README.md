@@ -1,6 +1,6 @@
 # Day 3: Combinational and Sequential Logic Optimizations
  
-The focus of today is 
+The focus of today will be to explore the concepts of Combinational and Sequential Logic Optimizations. We will learn how optimization improves design efficiency through techniques like constant propagation, Boolean simplification, retiming, and state optimization. Further, we will perform hands-on labs to see how these optimizations simplify real Verilog circuits, and conclude with an introduction to unused output optimization.
 
 ---
 
