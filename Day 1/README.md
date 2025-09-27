@@ -364,7 +364,7 @@ endmodule
      ```
    * Step 2: Read the liberty file <br>
      ```
-     read_liberty -lib read_liberty -lib [address to your sky130 library file]/sky130_fd_sc_hd__tt_025C_1v80.lib
+     read_liberty -lib [address to your sky130 library file]/sky130_fd_sc_hd__tt_025C_1v80.lib
 
      ```
    * Step 3: Read the Verilog Code <br>
