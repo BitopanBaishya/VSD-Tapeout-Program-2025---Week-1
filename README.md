@@ -31,7 +31,7 @@ The focus of this week is on **understanding the complete RTL design flow.**
 
 ## 🏁 Final Remarks
 
-The completion of Week 0 marks the successful setup of the development environment required for the program.
+ <!--- The completion of Week 0 marks the successful setup of the development environment required for the program.
 
 This week primarily focused on:
 
@@ -39,6 +39,6 @@ This week primarily focused on:
 - Verifying proper configurations, and
 - Documenting the entire process for reproducibility.
 
-Although certain challenges were encountered during the setup, they provided valuable learning experiences in debugging and problem-solving within a Linux environment.
+Although certain challenges were encountered during the setup, they provided valuable learning experiences in debugging and problem-solving within a Linux environment.-->
 
 📌For easy navigation to all weeks of the program, please visit the [Master Repository](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025.git).
