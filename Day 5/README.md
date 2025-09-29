@@ -151,7 +151,7 @@ In these labs, we will look at Inferred Latch formation due to Incomplete `case`
      * If `sel = 2'b01`, then `y` is assigned the value of `i1`.
      * For all other values of `sel` (i.e., `2'b10` and `2'b11`), no assignment is specified.
    - **RTL Simulation Waveform:**
-     <img src="" alt="Alt Text" width="1000"/>
+     <img src="Images/incomp_case_Simulation.png" alt="Alt Text" width="1000"/>
    - **Schematic after Synthesis:**
      <img src="Images/incomp_case_schematic.png" alt="Alt Text" width="1000"/>
    - **Analysis of the Waveform and Schematic:**<br>
@@ -180,7 +180,7 @@ In these labs, we will look at Inferred Latch formation due to Incomplete `case`
      * For all other values of `sel` (`2'b10` or `2'b11`), the default branch ensures that `y` is assigned the value of `i2`.<br>
        This use of the `default` branch ensures that `y` is defined for every possible input combination of `sel`, preventing the inference of latches and making the logic fully combinational.
    - **RTL Simulation Waveform:**
-     <img src="" alt="Alt Text" width="1000"/>
+     <img src="Images/comp_case_Simulation.png" alt="Alt Text" width="1000"/>
    - **Schematic after Synthesis:**
      <img src="Images/comp_case_schematic.png" alt="Alt Text" width="1000"/>
    - **Analysis of the Waveform and Schematic:**<br>
@@ -221,7 +221,7 @@ In these labs, we will look at Inferred Latch formation due to Incomplete `case`
        * `x` is assigned the value of `i1`.<br>
        Because not all branches assign both outputs (specifically, `x` is not assigned when `sel = 2'b01`), this code may lead to inferred latches for `x` in synthesis. The latch would hold the previous value of `x` when `sel = 2'b01`, while `y` is fully defined for all cases.
    - **RTL Simulation Waveform:**
-     <img src="" alt="Alt Text" width="1000"/>
+     <img src="Images/partial_case_assign_Simulation.png" alt="Alt Text" width="1000"/>
    - **Schematic after Synthesis:**
      <img src="Images/partial_case_assign_schematic.png" alt="Alt Text" width="1000"/>
    - **Analysis of the Waveform and Schematic:**<br>
@@ -251,7 +251,7 @@ In these labs, we will look at Inferred Latch formation due to Incomplete `case`
      * The last case, `2'b1?`, is a wildcard case intended to match any value where the MSB of `sel` is 1 (i.e., `2'b10` or `2'b11`). In Verilog, using `?` in a `case` statement is not standard syntax in most tools and may cause unpredictable behavior in simulation or synthesis.<br>
        Because some `sel` values may match multiple branches ambiguously (especially `2'b10`, which matches both `2'b10` and `2'b1?`), this code can lead to inconsistent behavior or inferred latches depending on the tool.
    - **RTL Simulation Waveform:**
-     <img src="" alt="Alt Text" width="1000"/>
+     <img src="Images/bad_case_Simulation.png" alt="Alt Text" width="1000"/>
    - **Schematic after Synthesis:**
      <img src="Images/bad_case_schematic.png" alt="Alt Text" width="1000"/>
    - **Analysis of the Waveform and Schematic:**<br>
