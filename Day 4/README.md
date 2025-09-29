@@ -1,6 +1,6 @@
 # Day 4: Gate-Level Simulation (GLS), Blocking vs. Non-Blocking in Verilog, and Synthesis-Simulation Mismatch
  
-The focus of today will be 
+The focus of today will be to explore the importance of Gate-Level Simulation (GLS) and understand common pitfalls that cause synthesis-simulation mismatches. We will begin by learning how GLS validates the logical and timing correctness of a synthesized design. Then, we will study how improper Verilog coding practices—such as incomplete sensitivity lists or misuse of blocking assignments—can lead to mismatches between RTL and gate-level behavior. Finally, we will reinforce these concepts through hands-on lab experiments that compare RTL and GLS results for different designs.
 
 ---
 
