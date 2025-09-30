@@ -325,7 +325,7 @@ Sequential optimization applies to circuits where the output depends on both cur
    - **Optimized synthesis:**
      <img src="Images/dff_const4_Schematic.png" alt="Alt Text" width="1000"/>
 
-### 4. <ins>Lab 4</ins>
+### 5. <ins>Lab 5</ins>
    - **Verilog code:**
      ```
      module dff_const5(input clk, input reset, output reg q);
