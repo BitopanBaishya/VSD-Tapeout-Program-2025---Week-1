@@ -391,7 +391,7 @@ endmodule
      write_verilog -noattr good_mux_netlist.v
      ```	
 
-### 5. <ins>Expected Output</ins>
+### 3. <ins>Expected Output</ins>
    * The visualization of the MUX will be as follows:
      <img src="Images/2to1MUX_SynthesisVisualization.png" alt="Alt Text" width="1000"/><br>
    * The generated netlist file in Verilog (good_mux_netlist.v) is as follows:
