@@ -31,10 +31,10 @@ The focus of this week is on **understanding the complete RTL design flow.**
 
 ## ⚠️ Challenges
 
-- **Week 1**:
+- **Day 1**:
   * **Yosys shows Command Error**: While synthesizing the Verilog MUX design in Yosys, the synthesis completed successfully. However, executing the `show` command to generate the schematic diagram resulted in the error: `ModuleNotFoundError: No module named 'distutils'`. [Learn more.](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/main/Day%201/README.md#1-yosys-shows-command-error)
 
-- **Week 5**:
+- **Day 5**:
   * **Syntax and Port Mismatch Errors in Testbench**: While simulating the Verilog design `partial_case_assign.v` using Iverilog, the testbench `tb_partial_case_assign.v` failed to compile and produced errors. [Learn more.](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/main/Day%205/README.md#1-syntax-and-port-mismatch-errors-in-testbench)
   * **Embedded images in Github not updating**: Updating errorneous images with correct images in the Github repository did not reflect in the README.md documentation. [Learn more](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/main/Day%205/README.md#2-embedded-images-in-github-not-updating)
   * **Doubt: Hierarchical Netlist and GLS Setup**: Doubt regarding the RTL Simulation, Yosys Synthesis and Gate Level Simulation when more than two RTL Design Verilog files are present. [Learn more.](https://github.com/BitopanBaishya/VSD-Tapeout-Program-2025---Week-1/blob/main/Day%205/README.md#3-doubt-hierarchical-netlist-and-gls-setup)
