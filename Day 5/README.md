@@ -1,6 +1,7 @@
-# Day 4: Gate-Level Simulation (GLS), Blocking vs. Non-Blocking in Verilog, and Synthesis-Simulation Mismatch
+# Day 5: Optimization in Synthesis
  
-The focus of today will be 
+Today’s focus is on sharpening our understanding of decision-making and control flow in Verilog.
+We begin with the fundamentals of if-else and case statements, explore how incomplete constructs can unintentionally create inferred latches, and analyze this phenomenon through practical labs. From there, we move into the realm of looping constructs (for, generate for, and generate if) to see how Verilog enables both concise coding and scalable hardware design.
 
 ---
 
@@ -10,7 +11,8 @@ The focus of today will be
 [3. Labs: Inferred Latch due to Incomplete `if` Constructs](#3-labs-inferred-latch-due-to-incomplete-if-constructs)<br>
 [4. Labs: Inferred Latch due to Incomplete `case` Constructs](#4-labs-inferred-latch-due-to-incomplete-case-constructs)<br>
 [5. Looping Constructs in Verilog](#5-looping-constructs-in-verilog)<br>
-[6. Labs: Looping Constructs in Verilog]()<br>
+[6. Labs: Looping Constructs in Verilog](#6-labs-looping-constructs-in-verilog)<br>
+[Challenges](#%EF%B8%8F-challenges)
 
 ---
 
@@ -482,12 +484,48 @@ In these labs, we will look at the usage of looping constructs in Verilog.
 	 This happens because the design hierarchically uses the `fa` (full adder) module as a building block and then instantiates multiple such blocks in the `rca` module using both manual instantiation (for the LSB) and a `generate-for` loop (for the remaining bits). Each carry-out is propagated to the next stage, forming the classic Ripple Carry Adder structure. Since all inputs and outputs are fully specified at every stage, no unintended latches are inferred. <br>
 	 Thus, both simulation and synthesis confirm that the design functions as a purely combinational 8-bit Ripple Carry Adder, demonstrating the practical use of hierarchical design and generate constructs in Verilog to build scalable arithmetic circuits.
 
+---
 
+## ⚠️ Challenges
 
+### 1. <ins>Syntax and Port Mismatch Errors in Testbench</ins>
+* Problem:<br>
+  While simulating the Verilog design `partial_case_assign.v` using Iverilog, the testbench `tb_partial_case_assign.v` failed to compile and produced errors such as:
+  * `syntax error I give up`
+  * `port i3 is not a port of uut`
+  * `port sel expects 2 bits, got 1`
+  * `$dumpvars binding error`
+    
+* Cause:<br>
+  The root causes of these errors were:
+  * **Incorrect module declaration**: The testbench module name included the `.v` file extension (module `tb_partial_case_assign.v`), which is invalid in Verilog.
+  * **Port mismatch**: The testbench attempted to connect and i3 signal that did not exist in `partial_case_assign.v`. Additionally, the `sel` signal was declared as 1-bit in the testbench while the design expected 2 bits.
+  * **Incorrect $dumpvars usage**: The `.v` extension was incorrectly included in $dumpvars.
+* Solution:<br>
+  The errors were resolved by:
+  * Removing the `.v` extension from the testbench module declaration and $dumpvars.
+  * Declaring `sel` as a 2-bit register to match `partial_case_assign.v`.
+  * Removing the `i3` connection from the UUT instantiation.
 
+### 2. <ins>Embedded images in Github not updating.</ins>
+* Problem:<br>
+  While documenting the RTL design flow, a few simulation results were embedded as images inside the `README.md` file using links to screenshots stored in a folder in the Github repository. Later, three of those screenshots were found to be incorrect and were replaced with updated versions. The new images were uploaded with the same filenames (to preserve naming consistency and meaning). However, despite deleting the old images and pushing the updated ones, the README.md documentation continued to show the old errorneous screenshots, making it seem like the update had not worked.
+* Cause:<br>
+  This behaviour was not due to an issue in the Markdown or the repository structure. Instead, it occured because Github serves images through its Content Delivery Network (CDN), which caches files to improve performance. When a file with the same name is replaced, the CDN may still deliver the previously cached version for some time. Additionally, the local browser cache can also store the older image, which further delays the display of the updated version.
+* Solution:<br>
+  Refreshing the repository and clearing the browser cache forced Github to fetch the latest versions of the images, and the updated screenshots were displayed correctly in the documentation. As an alternative fix, adding a cache-busting parameter (e.g., ?v=2) to the image link in Markdown can ensure that Github and the browser treat the file as new, immediately displaying the correct version.
 
-
-
+### 3. <ins>Doubt: Hierarchical Netlist and GLS Setup</ins>
+* Problem:<br>
+  While working on the **Ripple Carry Adder (RCA) design:
+  * The RTL was split across two files: `fa.v` and `rca.v`. During synthesis, only one netlist (`rca_netlist.v`) was generated, raising a doubt whether separate netlists were needed for each RTL file.
+  * Later, while preparing for Gate-Level Simulation (GLS), there was uncertainty about whether the GLS requires the netlists of both the original RTL files or only the generated single netlist file would suffice. 
+* Cause:<br>
+  * RTL designs are often hierarchical, split across multiple files, while synthesis tools flatten this hierarchy into a single netlist. This can confuse beginners into thinking each RTL file must have a separate netlist.
+  * Similarly, GLS, which simulates the gate-level behaviour, needs the single synthesized netlist. Beginners may assume that netlists of all the original RTL files are required, causing a doubt.
+* Solution:<br>
+  * The only synthesized netlist is needed (`rca_netlist.v`). The synthesis process automatically includes all the lower-level modules into the top-level design.
+  * For GLS, only the single netlist, the testbench and the standard cell library models are required. Individual netlist files for each original RTL files are not required.
 
 
 
